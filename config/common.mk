@@ -70,9 +70,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/exthm/config/permissions/org.lineageos.android.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/org.lineageos.android.xml
 
-# Enforce privapp-permissions whitelist
+# Log privapp-permissions whitelist violations
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.control_privapp_permissions=enforce
+    ro.control_privapp_permissions=log
 
 # Include AOSP audio files
 include vendor/exthm/config/aosp_audio.mk
