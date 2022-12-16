@@ -43,21 +43,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     DefaultTheme
 
-# MiPush
-ifneq ($(WITHOUT_MIPUSH),true)
-PRODUCT_PACKAGES += \
-    MiPushManager \
-    MiPushService
-ifeq ($(WITH_MIPUSH_PROP),true)
-    PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-        ro.miui.ui.version.name = V10 \
-        ro.miui.ui.version.code = 8 \
-        ro.miui.version.code_time = 1544025600 \
-        ro.fota.oem = Xiaomi \
-        ro.miui.internal.storage = /sdcard/
-endif
-endif
-
 # Accents
 PRODUCT_PACKAGES += \
     LineageBlackTheme \
